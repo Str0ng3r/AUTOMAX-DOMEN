@@ -31,6 +31,21 @@ ul {
     padding: 0;
     margin: 0;
 }
+.fixed_div__body {
+    position: fixed;
+    bottom: -10px;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fixed_button__body {
+    padding: 0;
+    background-color:transparent;
+    border: 0;
+    cursor: pointer;
+}
 .list__nav__header {
     display: flex;
     gap: 50px;
@@ -374,7 +389,6 @@ text-align: center;
     background-color: #0F1211;
     display: flex;
     padding: 100px;
-    height: 1200px;
 }
 .about__name {
     text-align: center;
@@ -579,9 +593,7 @@ bottom:0;
 left: 160px;
 }
 .google_map {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 20px;
     border: 4px;
     border-color: #1C1C1C;
 }
@@ -611,10 +623,6 @@ left: 160px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: 40px;
-    height: 500px;
 animation: opacity-transformX- 1s linear;
 border-radius: 79px;
 }
@@ -651,9 +659,6 @@ border-radius: 79px;
 }
 .about_automax__o-nas {
     font-family: 'Poppins';
-    position: absolute;
-    right: 0;
-    top: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -686,7 +691,6 @@ border-radius: 79px;
 }
 .about_automax__wrap-cont {
     height: 100%;
-    position: relative;
     display: flex;
     justify-content: space-between;
     }
@@ -702,17 +706,24 @@ address {
 }
 .links__footer {
     display: flex;
+    padding-left: 60px;
+}
+.svg_facebook__footer {
+    fill:#d6dae5 ;
+}
+.svg_facebook__footer:hover {
+    fill: #13C6FF;
 }
 .contacts__footer {
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
-.contacts__footer li{
+.contact_link__footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -737,14 +748,19 @@ fill: #FFFFFF;
 .svg__address:hover {
     fill: #13C6FF;
 }
-.contacts__footer li:hover {
+.contact_link__footer:hover {
     color: #13C6FF;
 }
-.svg__address:hover .contacts__footer li {
+.svg__address:hover .contact_link__footer {
     color: #13C6FF;
 }
 .contacts__footer li:hover .svg__address {
     fill: #13C6FF;
+}
+@media screen and (max-width: 1600px){
+    .about_automax__wrap-cont{
+       flex-direction: column;
+    }
 }
 @keyframes opacity-transformX- {
     0%{
