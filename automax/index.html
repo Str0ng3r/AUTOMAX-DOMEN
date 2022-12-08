@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div class="fixed_div__body"><button type="button" class="fixed_button__body"><img width="200px" src="./images/mechanic-message.png" alt="mechanic-mesage"></button></div>
+    <div class="fixed_div__body"><a href="tel:+48729592345" class="fixed_button__body"><img width="200px" src="./images/mechanic-message.png" alt="mechanic-mesage"></a></div>
     <header>
         <div class="container">
             <div class="head__header">
@@ -31,16 +31,16 @@
         <nav class="nav__header">
             <ul class="list__nav__header">
                 <li>
-                    <a class="link__nav__header" href="">Usługi</a>
+                    <a class="link__nav__header" href="#service-link">Usługi</a>
                 </li>
                 <li>
-                    <a class="link__nav__header" href="">Wyniki</a>
+                    <a class="link__nav__header" href="#difference-sect">Wyniki</a>
                 </li>
                 <li>
-                    <a class="link__nav__header" href="">Nasze strony</a>
+                    <a class="link__nav__header" href="#social-footer">Nasze strony</a>
                 </li>
                 <li>
-                    <a class="link__nav__header" href="">Ceny</a>
+                    <a class="link__nav__header" href="#lokacia">Lokalizacja</a>
                 </li>
             </ul>
         </nav>
@@ -60,7 +60,7 @@
     <section class="about_automax">
         <div class="container">
             <div class="about_automax__wrap-cont">
-            <div class="about_automax__lokacia">
+            <div class="about_automax__lokacia" id="lokacia">
                 <img src="./images/map-icon.png" width="300px" height="300px" alt="map-icon">
                 <p class="about_automax__adress"><img src="./images/city.png" class="city-icon" width="64px" height="64px" alt="city-icon"> Jesteśmy warsztatem samochodowym w<br>Gorzowie Wielkopolskim.</p>
                 <p class="about_automax__adress-min"><img src="./images/street.png" class="street-icon" width="64px" height="64px" alt="street-icon"> Znajdujemy się przy (AutoMax Warszawska, 66-400 Gorzów Wielkopolski)</p>
@@ -87,7 +87,7 @@
     </div>
     </div>
     </section>
-    <section class="services">
+    <section class="services" id="service-link">
         <div class="container">
             <div class="cont__services">
             <h2 class="services__h2">Nasze Usługi</h2>
@@ -141,7 +141,7 @@
         </div>
         </div>
         <div class="underline-difference"></div>
-        <div class="container main__container">
+        <div class="container main__container" id="difference-sect">
             <div class="main__difference">
             <h2>Przed i po naszej pracy</h2>
             <ul class="main__list__difference">
@@ -163,7 +163,7 @@
         </div>
 </div>
     </section>
-    <footer>
+    <footer id="social-footer">
         <div class="container">
             <div class="wrap_cont__footer">
             <address>
@@ -189,9 +189,9 @@
                 </ul>
             </address>
             <ul class="links__footer">
-                <li><svg class="svg_facebook__footer">
+                <li><a href="https://www.facebook.com/profile.php?id=100085678686667"><svg class="svg_facebook__footer">
                     <use href="./images/icons.svg#icon-facebook"></use>
-                </svg></li>
+                </svg></a></li>
                 <li> <svg>
                     <use></use>
                 </svg></li>
