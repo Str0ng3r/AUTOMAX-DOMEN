@@ -383,6 +383,7 @@ text-align: center;
     color: #000000;
     margin-top: 20px;
     transition:color 0.3s linear, border-color 0.3s linear ;
+    cursor: pointer;
 }
 .button__margin__not {
     margin-top: 0;
@@ -450,21 +451,31 @@ text-align: center;
     background-color: #C03232;
 }
 .price_list_pranie {
+    transition: opacity 0.5s linear;
     position:absolute;
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF;
+    background:linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6));;
     border-radius: 10px;
     z-index: 998;
+}
+.price_list_przenoszenie {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 10px solid #000000;
 }
 .price__main-text {
     text-align: center;
     font-family: 'Poppins';
     font-size: 60px;
-    color: #0c0728;
+    color: #D9D9D9;
     font-weight: 900;
     line-height: 65px;
     margin-bottom: 20px;
+}
+.komplex-pranie {
+    padding-left: 40px;
 }
 .underline_prices_komplex {
     width: 600px;
@@ -480,6 +491,12 @@ text-align: center;
     font-weight: 900;
     line-height: 65px;
     margin-left: 50px;
+}
+.price_list_diagnostic {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 10px solid #000000;
 }
 .komplex-pranie__list__li {
     display: flex;
@@ -523,6 +540,8 @@ text-align: center;
     line-height: 40px;
 }
 .price__left-block {
+    background-color: #FFFFFF;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -597,6 +616,7 @@ border-radius: 4px;
 .price__services-table {
     margin: 0 auto;
     border-radius: 20px;
+    background-color: #FFFFFF;
     border: 10px solid #000000;
 }
 .uslugi__li {
@@ -785,6 +805,50 @@ fill: #FFFFFF;
 }
 .contacts__footer li:hover .svg__address {
     fill: #13C6FF;
+}
+.cross-icon {
+    width: 36px;
+    height: 36px;
+}
+.cross-icon:hover {
+    fill: #C03232;
+}
+.cont-hodowa {
+width: 100%;
+height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    background:linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6));
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.5s linear;
+}
+.cont-all {
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6));
+    position: absolute;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.5s linear;
+}
+.price_list_hamulce {
+        margin:0 auto;
+    border: 10px solid #000000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.price_list_hodowa {
+    margin:0 auto;
+    border: 10px solid #000000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 @media screen and (max-width: 1600px){
     .about_automax__wrap-cont{
