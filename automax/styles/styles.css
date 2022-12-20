@@ -66,8 +66,7 @@ button {
     gap: 50px;
 }
 .logotip {
-    width: 250px;
-    height: 90px;
+    width: 350px;
     margin-left: 100px;
     margin-top: 10px;
 }
@@ -123,6 +122,7 @@ header {
     width: 100%;
     max-height: 800px;
     position: relative;
+    padding: 20px 0;
 }
 .service {
     font-family: 'Prompt';
@@ -855,7 +855,7 @@ height: 100%;
     .about_automax__wrap-cont{
        flex-direction: column;
     }
-
+}
 
 @media screen and (max-width:479px) {
     .container {
@@ -882,6 +882,7 @@ height: 100%;
     .link__nav__header {
         text-align: center;
         font-size: 20px;
+        padding: 5px;
     }
     .list__nav__header li {
         align-items: center;
@@ -1000,9 +1001,11 @@ display: none;
     .contacts__footer {
        align-items: baseline;
        justify-content: center;
-    }
 }
-
+.price_list_pranie {
+    display: none;
+}
+}
 
 
 
