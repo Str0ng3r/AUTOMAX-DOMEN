@@ -742,6 +742,7 @@ border-radius: 79px;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     }
 footer {
     background-color: #20202F;
@@ -854,10 +855,6 @@ height: 100%;
     .about_automax__wrap-cont{
        flex-direction: column;
     }
-    .container {
-    width: 1200px;
-    }
-}
 
 
 @media screen and (max-width:479px) {
@@ -1075,7 +1072,8 @@ width: 50%;
         width: 100%;
     }
 }
-@keyframes opacity{
+
+@keyframes opacity {
 0%{
     opacity:0;
 }
