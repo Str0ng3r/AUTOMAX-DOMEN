@@ -1005,6 +1005,9 @@ display: none;
 .price_list_pranie {
     display: none;
 }
+.svg_facebook__footer {
+    max-width: 250px;
+}
 }
 
 
