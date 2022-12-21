@@ -60,6 +60,21 @@
 
   (() => {
     const refs = {
+      openModalBtn: document.querySelector("[data-modal-open-lak]"),
+      closeModalBtn: document.querySelector("[data-modal-close-lak]"),
+      modal: document.querySelector("[data-modal-lak]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
+  })();
+
+  (() => {
+    const refs = {
       openModalBtn: document.querySelector("[data-modal-open-komputerowa]"),
       closeModalBtn: document.querySelector("[data-modal-close-komputerowa]"),
       modal: document.querySelector("[data-modal-komputerowa]"),
@@ -93,21 +108,6 @@
       openModalBtn: document.querySelector("[data-modal-open-kosmetyka]"),
       closeModalBtn: document.querySelector("[data-modal-close-kosmetyka]"),
       modal: document.querySelector("[data-modal-kosmetyka]"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
-
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open-lakier]"),
-      closeModalBtn: document.querySelector("[data-modal-close-lakier]"),
-      modal: document.querySelector("[data-modal-lakier]"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);

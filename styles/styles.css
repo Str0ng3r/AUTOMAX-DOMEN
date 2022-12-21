@@ -593,7 +593,11 @@ border-radius: 4px;
     position: absolute;
     right: 30px;
     top: 30px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     cursor: pointer;
+    z-index: -1;
 }
 .number {
     font-family: 'Poppins';
@@ -846,6 +850,12 @@ height: 100%;
     background-color: #FFFFFF;
 }
 .price_list_hodowa {
+    margin:0 auto;
+    border: 10px solid #000000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.price_list_lakier {
     margin:0 auto;
     border: 10px solid #000000;
     border-radius: 10px;
