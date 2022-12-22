@@ -1020,9 +1020,182 @@ display: none;
 }
 }
 
+@media screen and (max-width:729px) {
+    .li__list__services {
+        height: 230px;
+        width: 100%;
+    }
+    .text__button__services {
+        font-size: 46px;
+        line-height: 36px;
+    }
+}
 
-
-
+@media screen and (min-width:480px) and (max-width:767px) {
+     .container {
+         max-width: 730px;
+         width: auto;
+     }
+     .google_map iframe {
+         width: 100%;
+         height: 300px;
+     }
+     .head__header {
+         flex-direction: column;
+     }
+     .logotip {
+         height: auto;
+     margin: 0 auto;
+         width:90%;
+         margin-top: 0;
+     }
+     .list__nav__header {
+         gap: 10px;
+         flex-wrap: wrap;
+     }
+     .link__nav__header {
+         text-align: center;
+         font-size: 26px;
+         padding: 5px;
+     }
+     .list__nav__header li {
+         align-items: center;
+         display: flex;
+     }
+     .descript__header {
+         margin-top: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     .descript__header h2 {
+         display: flex;
+         font-size: 46px;
+         line-height: 48px;
+     }
+     .main_text__header {
+         margin-bottom: 10px;
+     }
+     .about_automax {
+         padding:0;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     .about_automax__adress {
+         font-size: 36px;
+         flex-direction: column;
+         align-items: center;
+     }
+     .city-icon {
+         padding: 0;
+     }
+     .about_automax__adress-min {
+         flex-direction: column;
+         align-items: center;
+         width: auto;
+         text-align: center;
+         padding: 0;
+         margin-top: 20px;
+     }
+     .about_automax__o-nas {
+         width: 100%;
+         flex-direction: column;
+         margin-top: 20px;
+     }
+     .about_automax__o-nas h2 {
+         display: none;
+     }
+     .about_automax__o-nas p {
+         font-size: 20px;
+     }
+     .about_automax__o-nas__span {
+         font-size: 24px;
+     }
+     .rabotnik-img {
+         width: 100%;
+         height: 600px;
+         padding-bottom: 20px;
+     }
+     .list__sect__services {
+         width: 100%;
+         align-items: center;
+         justify-content: center;
+     }
+     .li__list__services {
+         height: 230px;
+     }
+     .services__h2 {
+         font-size: 46px;
+         text-align: center;
+     }
+     .text__button__services {
+         font-size: 26px;
+         line-height: 36px;
+     }
+     .button__services__info {
+         width: auto;
+     }
+     .underline-difference {
+ display: none;
+     }
+     .main__container {
+         display: none;
+     }
+     .button-close__servic {
+     width: 100%;
+     height: 100%; 
+     z-index: -1;
+     opacity: 0;
+     }
+     .services {
+         padding-bottom: 20px;
+     }
+     footer {
+         padding: 0;
+     }
+     .wrap_cont__footer {
+         flex-direction: column;
+     }
+     .fixed_button__body {
+         display: none;
+     }
+     address {
+         padding: 0;
+     }
+     .contact_link__footer {
+        display: flex;
+        flex-direction: column;
+         font-size: 24px;
+     }
+     .links__footer {
+         padding-left: 10px;
+         align-items: center;
+         justify-content: center;
+     }
+     .contacts__footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+ }
+ .contacts__footer li{
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+ .price_list_pranie {
+     display: none;
+ }
+ .svg_facebook__footer {
+     max-width: 250px;
+ }
+ .svg__address {
+    margin-right: 0;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 10px;
+ }
+}
 
 
 
