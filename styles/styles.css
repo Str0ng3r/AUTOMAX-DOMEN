@@ -66,9 +66,19 @@ button {
     gap: 50px;
 }
 .logotip {
-    width: 350px;
-    margin-left: 100px;
+    width: 750px;
     margin-top: 10px;
+    margin-bottom: 20px;
+    filter: drop-shadow(-10px 4px 4px rgba(78, 96, 142, 0.45));
+    animation: up-down 5s ease-in-out infinite;
+}
+@keyframes up-down {
+50% {
+    transform: translateY(3%);
+}
+100% {
+    transform: translateY(0%);
+}
 }
 .header__services {
     padding: 0;
@@ -76,7 +86,7 @@ button {
 .head__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 /* .button__header {
 padding: 10px;
@@ -110,8 +120,9 @@ padding: 10px;
 color: #FFFFFF;
 }
 .container {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
+    width: 100%;
     padding: 20px 0;
 }
 header {
@@ -123,6 +134,7 @@ header {
     max-height: 800px;
     position: relative;
     padding: 20px 0;
+    background-attachment: fixed;
 }
 .service {
     font-family: 'Prompt';
@@ -166,7 +178,7 @@ margin-bottom: 20px;
     margin-bottom: 40px;
 }
 .descript__header {
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .underline-difference {
     width: 1150px;
@@ -275,6 +287,7 @@ margin-bottom: 20px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)),url(../images/фон-услуги.jpg);
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 .services__h2 {
     font-family: 'Prompt';
@@ -304,6 +317,7 @@ margin-bottom: 20px;
     width: 350px;
     height: 250px;
     position: relative;
+transition:transform 0.5s linear;
 }
 .text__button__services {
     font-family: 'Prompt';
@@ -345,6 +359,7 @@ text-align: center;
 }
 .li__list__services:hover {
     box-shadow: 1px -2px 24px 0px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
 }
 .li__list__services:hover::after {
     height: 2px;
@@ -357,8 +372,13 @@ text-align: center;
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 30px;
-    width: 1110px;
+    max-width: 1110px;
     padding: 0;
+    width: 100%;
+}
+.price-body {
+    background-image: url(../images/back-prices.jpg);
+    background-size: cover;
 }
 .price__pranie {
     background-image: url(../images/back-prices.jpg);
@@ -384,6 +404,23 @@ text-align: center;
     margin-top: 20px;
     transition:color 0.3s linear, border-color 0.3s linear ;
     cursor: pointer;
+}
+.back-button {
+    padding: 15px;
+    background-color: #0c0728;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-left:30px ;
+    margin-top: 40px;
+}
+.link-button-back {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 34px;
+}
+.link-button-back:hover {
+    color: #C03232;
 }
 .button__margin__not {
     margin-top: 0;
@@ -444,7 +481,7 @@ text-align: center;
     margin: 0 auto;
 }
 .underline_prices {
-    width: 1150px;
+    width: 100%;
     height: 20px;
     margin: 20px auto;
     border-radius: 4px;
@@ -580,7 +617,7 @@ th {
 }
 .underline__table__services {
 background-color: #0c0728;
-width: 800px;
+width: 80%;
 height: 5px;
 border-radius: 4px;
 }
@@ -705,7 +742,7 @@ border-radius: 79px;
     font-size: 20px;
     line-height: 30px;
     display: flex;
-    width: 600px;
+    max-width: 600px;
     align-items: center;
     color: #FFFFFF;
     padding-left: 66px;
@@ -720,7 +757,7 @@ border-radius: 79px;
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
-    width: 700px;
+    max-width: 700px;
     text-align: center;
     flex-direction: column;
     animation: opacity-transformX 1s linear;
@@ -870,7 +907,7 @@ height: 100%;
 @media screen and (max-width:479px) {
     .container {
         max-width: 450px;
-        width: auto;
+        width: 100%;
     }
     .google_map iframe {
         width: 100%;
@@ -1009,7 +1046,7 @@ display: none;
         justify-content: center;
     }
     .contacts__footer {
-       align-items: baseline;
+       align-items: center;
        justify-content: center;
 }
 .price_list_pranie {

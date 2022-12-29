@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Prompt:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="fixed_div__body"><a href="tel:+48729592345" class="fixed_button__body"><img width="200px" src="./images/mechanic-message.png" alt="mechanic-mesage"></a></div>
     <header>
         <div class="container">
-            <div class="head__header">
-       <img class="logotip" src="./images/LOGO.png" alt="LOGO">
+            <div data-aos="fade-down" class="head__header">
         <nav class="nav__header">
             <ul class="list__nav__header">
                 <li>
@@ -34,7 +34,8 @@
         </nav>
     </div>
         <!-- <button class="button__header">zadzwoń</button> -->
-        <div class="descript__header">
+        <div data-aos="fade-right" class="descript__header">
+                   <img class="logotip" src="./images/LOGO.png" alt="LOGO">
         <h2>Chcesz dobrej obsługi?</h2>
         <h1 class="main_text__header">Ty do nas!</h1>
         <ul class="header__services">
@@ -48,20 +49,20 @@
     <section class="about_automax">
         <div class="container">
             <div class="about_automax__wrap-cont">
-            <div class="about_automax__lokacia" id="lokacia">
-                <img src="./images/map-icon.png" width="300px" height="300px" alt="map-icon">
-                <p class="about_automax__adress"><img src="./images/city.png" class="city-icon" width="64px" height="64px" alt="city-icon"> Jesteśmy warsztatem samochodowym w<br>Gorzowie Wielkopolskim.</p>
-                <p class="about_automax__adress-min"><img src="./images/street.png" class="street-icon" width="64px" height="64px" alt="street-icon"> Znajdujemy się przy (AutoMax Warszawska, 66-400 Gorzów Wielkopolski)</p>
-                <div class="google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2415.892651378205!2d15.271660100000002!3d52.734129499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47071f5b9e7e452d%3A0x1374901aeea7e43b!2sAutoMaX%20(%20Auto%20Serwis)!5e0!3m2!1sru!2spl!4v1670369094457!5m2!1sru!2spl" width="800" height="550" style="border: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div  class="about_automax__lokacia" id="lokacia">
+                <img data-aos="fade-right" src="./images/map-icon.png" width="300px" height="300px" alt="map-icon">
+                <p data-aos="fade-right" class="about_automax__adress"><img src="./images/city.png" class="city-icon" width="64px" height="64px" alt="city-icon"> Jesteśmy warsztatem samochodowym w<br>Gorzowie Wielkopolskim.</p>
+                <p data-aos="fade-right" class="about_automax__adress-min"><img src="./images/street.png" class="street-icon" width="64px" height="64px" alt="street-icon"> Znajdujemy się przy (AutoMax Warszawska, 66-400 Gorzów Wielkopolski)</p>
+                <div data-aos="fade-right" class="google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2415.892651378205!2d15.271660100000002!3d52.734129499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47071f5b9e7e452d%3A0x1374901aeea7e43b!2sAutoMaX%20(%20Auto%20Serwis)!5e0!3m2!1sru!2spl!4v1670369094457!5m2!1sru!2spl" width="800" height="550" style="border: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        <div class="about_automax__o-nas">
-            <h2><img width="82px" height="82px" src="./images/porshen.png" alt="icon-detail-porshen"> Witam wszystkich! <img width="82px" height="82px" src="./images/porshen.png" alt="icon-detail-porshen"></h2>
-<p>Jesteśmy firmą "AutoMax" specjalizującą się na naprawach samochodów ta czyszczeniu w środku.
+        <div class="about_automax__o-nas" >
+            <h2 data-aos="fade-left"><img width="82px" height="82px" src="./images/porshen.png" alt="icon-detail-porshen" > Witam wszystkich! <img width="82px" height="82px" src="./images/porshen.png" alt="icon-detail-porshen"></h2>
+<p data-aos="fade-left">Jesteśmy firmą "AutoMax" specjalizującą się na naprawach samochodów ta czyszczeniu w środku.
     Jeśli chcesz szybkiej i wysokiej jakości pracy dla swojego samochodu - <br>
     <span class="about_automax__o-nas__span">ZDECYDOWANIE JESTEŚ DO NAS!</span>
 </p>
-<div class="rabotnik-img"></div>
+<div class="rabotnik-img" data-aos="fade-up"></div>
 </div>
 <!-- <div class="about_automax__list">
     <h3></h3>
@@ -75,143 +76,8 @@
     </div>
     </div>
     </section>
+    <!-- </section>
     <section class="services" id="service-link">
-
-
-
-        <div data-modal class="price_list_pranie is-hidden">
-            <div class="cont_all_servic">
-            <button data-modal-close class="button-close__servic"><svg class="cross-icon">
-                <use href="./images/icons.svg#icon-cross"></use>
-            </svg></button>
-            <h1 class="price__main-text">PRANIE I CZYSZCZENIE WNĘTRZ SAMOCHODU</h1>
-            <div class="underline_prices_komplex"></div>
-            <div class="price__wrap-container">
-            <div class="price__left-block">
-            <div class="komplex-pranie">
-            <h2>KOMPLEKS:</h2>
-            <ul class="komplex-pranie__list">
-                <li class="komplex-pranie__list__li"><img class="komplex-pranie__img" src="./images/complex.png" width="36px" height="36px" alt="complex">А Małe   (3 drzwi) – <span class="komplex-pranie__span__cennik">250 zł</span></li>
-                <li class="komplex-pranie__list__li"><img class="komplex-pranie__img" src="./images/complex.png" width="36px" height="36px" alt="complex">1  klasa  (sedan) – <span class="komplex-pranie__span__cennik">300 zł</span></li>
-                <li class="komplex-pranie__list__li"><img class="komplex-pranie__img" src="./images/complex.png" width="36px" height="36px" alt="complex">2 klasa  ( kombi) – <span class="komplex-pranie__span__cennik">350 zł</span></li>
-                <li class="komplex-pranie__list__li"><img class="komplex-pranie__img" src="./images/complex.png" width="36px" height="36px" alt="complex">3 klasa ( 7 os..) – <span class="komplex-pranie__span__cennik">450 zł</span></li>
-                <li class="komplex-pranie__list__li"><img class="komplex-pranie__img" src="./images/complex.png" width="36px" height="36px" alt="complex">4 klasa ( Bus  9 os.) –  <span class="komplex-pranie__span__cennik">700 zł</span></li>
-            </ul>
-        </div>
-        <h2 class="price__demontag">DEMONTAŻ FOTELE:</h2>
-        <p class="price__line__demontag"><img src="./images/demontag.png" alt="Screwdriver" width="36px" height="36px"> 1.Demontaż przednich foteli  -<span class="price__demontag__span">25 zł</span> (za 1szt)</p>
-        <p class="price__line__demontag"><img src="./images/demontag.png" alt="Screwdriver" width="36px" height="36px"> 2.Demontaż kanapy tylne   -<span class="price__demontag__span">50 zł</span></p>
-        <div>
-        </div>
-        </div>
-        <table class="price__services-table">
-            <thead class="price__thead">
-<tr>
-<th class="number"><img src="./images/number.png" width="16px" height="16px" alt=""></th>
-<th>WYKONANIA USLUGI</th>
-<th>MAŁE</th>
-<th>SEDAN</th>
-<th>COMBI</th>
-<th>7 os.</th>
-<th>BUS 9 oc</th>
-</tr>
-</thead>
-<tr>
-<td class="number">1</td>
-<td class="glowna_servis">Czyszczenie podsufitki</td>
-<td>50 zł/auto</td>
-<td>70 zł/auto</td>
-<td>100 zł/auto</td>
-<td>100 zł/auto</td>
-<td>150 zł/auto</td>
-</tr>
-<tr>
-<td class="number">2</td>
-<td class="glowna_servis">Pranie ta czyszczenia fotele </td>
-<td>70 zł/auto</td>
-<td>100 zł/auto</td>
-<td>100 zł/auto</td>
-<td>150 zł/auto</td>
-<td>200 zł/auto</td>
-</tr>
-<tr>
-<td class="number">3</td>
-<td class="glowna_servis">Czyszczenia plastików</td>
-<td>30 zł/auto</td>
-<td>30 zł/auto</td>
-<td>30 zł/auto</td>
-<td>30 zł/auto</td>
-<td>30 zł/auto</td>
-</tr>
-<tr>
-<td class="number">4</td>
-<td class="glowna_servis">Pranie ta czyszczenia podłogi</td>
-<td>70 zł/auto</td>
-<td>100 zł/auto</td>
-<td>100 zł/auto</td>
-<td>100 zł/auto</td>
-<td>200 zł/auto</td>
-</tr>
-<tr>
-<td class="number">5</td>
-<td class="glowna_servis">Czyszczenia skóry</td>
-<td>70 zł/auto</td>
-<td>100 zł/auto</td>
-<td>100 zł/auto</td>
-<td>150 zł/auto</td>
-<td>200 zł/auto</td>
-</tr>
-<tr>
-<td class="number">6</td>
-<td class="glowna_servis">Czyszczenia progów </td>
-<td>20 zł/szt</td>
-<td>30 zł/szt</td>
-<td>30 zł/szt</td>
-<td>40 zł/szt</td>
-<td>50 zł/szt</td>
-</tr>
-<tr>
-<td class="number">7</td>
-<td class="glowna_servis">Pranie ta czyszczenia bagażnika</td>
-<td>30 zł/szt</td>
-<td>50 zł/szt</td>
-<td>50 zł/szt</td>
-<td>50 zł/szt</td>
-<td>100 zł/szt</td>
-</tr>
-<tr>
-<td class="number">8</td>
-<td class="glowna_servis">Czyszczenia dywaników tekstylnych</td>
-<td colspan="5">20 zł/szt</td>
-</tr>
-<tr>
-<td class="number">9</td>
-<td class="glowna_servis">Czyszczenia dywaników gumowych</td>
-<td colspan="5">10 zł/szt</td>
-</tr>
-<tr>
-<td class="number">10</td>
-<td class="glowna_servis">Ozonowanie</td>
-<td colspan="5">40 zł/auto</td>
-</tr>
-<tr>
-<td class="number">11</td>
-<td class="glowna_servis">Odkurzania całego auta</td>
-<td colspan="5">30 zł/auto</td>
-</tr>
-<tr>
-<td class="number">12</td>
-<td class="glowna_servis">Czyszczenia boku drzwi</td>
-<td colspan="5">10 zł/szt</td>
-</tr>
-        </table>
-    </div>
-    </div>
-    </div>
-
-
-
-
 <div data-modal-hodowa class="cont-all is-hidden">
     <button data-modal-close-hodowa class="button-close__servic"><svg class="cross-icon">
         <use href="./images/icons.svg#icon-cross"></use>
@@ -552,49 +418,49 @@
 
         <div class="container">
             <div class="cont__services">
-            <h2 class="services__h2">Nasze Usługi</h2>
+            <h2 data-aos="fade-up" class="services__h2">Nasze Usługi</h2>
             <ul class="list__sect__services">
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-right">
                     <img width="66px" height="66px" src="./images/81924.png" alt="">
                     <h3 class="text__button__services">Przenoszenie</h3>
                     <button data-modal-open-przenoszenie class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-up">
                     <img width="66px" height="66px" src="./images/6132182.png" alt="">
                     <h3 class="text__button__services">Zawieszenia</h3>
                     <button data-modal-open-hodowa class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-left">
                     <img width="66px" height="66px" src="./images/2052327.png" alt="">
                     <h3 class="text__button__services">Hamulce</h3>
                     <button data-modal-open-hamulce class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-right">
                     <img width="66px" height="66px" src="./images/2760055.png" alt="">
-                    <h3 class="text__button__services text__button__line_height">Profesjonalne pranie i czyszczenia samochodu</h3>
-                    <button data-modal-open class="button__services__info margin__not">Więcej informacji</button>
+                    <h3 class="text__button__services text__button__line_height">Profesjonalne pranie</h3>
+                    <a class="button__services__info margin__not" href="./price.html">Więcej informacji</a>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-up">
                     <img width="66px" height="66px" src="./images/3539549.png" alt="">
                     <h3 class="text__button__services">Naprawa elektryki</h3>
                     <button class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-left">
                     <img width="66px" height="66px" src="./images/943957.png" alt="">
                     <h3 class="text__button__services">Diagnostyka komputerowa</h3>
                     <button data-modal-open-komputerowa class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-right">
                     <img width="66px" height="66px" src="./images/2945956.png" alt="">
                     <h3 class="text__button__services">Spawalniczy</h3>
                     <button class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-up">
                     <img width="66px" height="66px" src="./images/1199860.png" alt="">
                     <h3 class="text__button__services">Auto kosmetyka wnętrza aut</h3>
                     <button class="button__services__info">Więcej informacji</button>
                 </li>
-                <li class="li__list__services">
+                <li class="li__list__services" data-aos="fade-left">
                     <img width="66px" height="66px" src="./images/33786.png" alt="">
                     <h3 class="text__button__services">Blacharstwo lakiernictwo</h3>
                     <button data-modal-open-lak class="button__services__info">Więcej informacji</button>
@@ -602,34 +468,34 @@
             </ul>
         </div>
         </div>
-        <div class="underline-difference"></div>
+        <div data-aos="fade-up" class="underline-difference"></div>
         <div class="container main__container" id="difference-sect">
             <div class="main__difference">
-            <h2>Przed i po naszej pracy</h2>
+            <h2 data-aos="fade-up">Przed i po naszej pracy</h2>
             <ul class="main__list__difference">
-                <li class="main__li__list">
+                <li class="main__li__list" data-aos="fade-up">
                     <p>Przesuń kursor nad obraz</p>
                 <div class="main__img__difference"></div>
         </li>
-            <li class="main__li__list"> 
+            <li class="main__li__list" data-aos="fade-up"> 
                 <div class="main__img__difference-1"></div>
                 <img class="cursor" width="36px" height="36px" src="./images/icons8-cursor-64.png" alt="">
         </li>
-            <li class="main__li__list">
+            <li class="main__li__list" data-aos="fade-up">
                 <div class="main__img__difference-2"></div>
         </li>
-        <li class="main__li__list">
+        <li class="main__li__list" data-aos="fade-up">
                 <div class="main__img__difference-3"></div>
         </li>
         </ul>
         </div>
 </div>
-    </section>
+    </section> -->
     <footer id="social-footer">
         <div class="container">
             <div class="wrap_cont__footer">
             <address>
-                <ul class="contacts__footer">
+                <ul class="contacts__footer" data-aos="fade-up">
                     <li><a class="contact_link__footer" href="https://www.google.com/maps/place/AutoMaX+(+Auto+Serwis),+Warszawska,+66-400+Gorz%C3%B3w+Wielkopolski/data=!4m2!3m1!1s0x47071f5b9e7e452d:0x1374901aeea7e43b?utm_source=mstt_1&entry=gps&g_ep=CAESCjExLjU3LjQ4MDEYACCIJyoAQgJQTA%3D%3D">
                         <svg class="svg__address">
                         <use href="./images/icons.svg#icon-map-icon"></use>
@@ -640,7 +506,7 @@
                         <svg class="svg__address">
                         <use href="./images/icons.svg#icon-mail"></use>
                     </svg>
-                                kalinakalenykov@gmail.com</a>
+                                masterskaya-gorzow@gmail.com</a>
                     </li>
                     <li class="exluse__tel__footer"><a class="contact_link__footer" href="tel:+48729592345">
                         <svg class="svg__address">
@@ -650,7 +516,7 @@
                     </li>
                 </ul>
             </address>
-            <ul class="links__footer">
+            <ul class="links__footer" data-aos="fade-up">
                 <li><a href="https://www.facebook.com/profile.php?id=100085678686667"><svg class="svg_facebook__footer">
                     <use href="./images/icons.svg#icon-facebook"></use>
                 </svg></a></li>
@@ -658,6 +524,10 @@
         </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./JS/modal.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
