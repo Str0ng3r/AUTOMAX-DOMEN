@@ -446,6 +446,7 @@ text-align: center;
     background-color: #0F1211;
     display: flex;
     padding: 100px;
+    overflow: hidden;
 }
 .about__name {
     text-align: center;
