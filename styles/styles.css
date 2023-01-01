@@ -290,6 +290,7 @@ margin-bottom: 20px;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .services__h2 {
     font-family: 'Prompt';
@@ -790,6 +791,7 @@ border-radius: 79px;
 footer {
     background-color: #20202F;
     padding: 20px;
+    overflow: hidden;
 }
 .wrap_cont__footer {
     display: flex;
@@ -1026,9 +1028,11 @@ display: none;
     }
     .services {
         padding-bottom: 20px;
+        overflow: hidden;
     }
     footer {
         padding: 0;
+        overflow: hidden;
     }
     .wrap_cont__footer {
         flex-direction: column;
