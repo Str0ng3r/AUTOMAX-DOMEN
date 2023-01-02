@@ -966,6 +966,9 @@ height: 100%;
         max-width: 450px;
         width: 100%;
     }
+    .wyniki-mobile {
+        display: none;
+    }
         .komplex-pranie {
             padding: 0;
         }
